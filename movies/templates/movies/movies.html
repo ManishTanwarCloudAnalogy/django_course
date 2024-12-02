@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>Django Project</title></head>
+<body>
+    <b>List of Documentaries:</b>
+        <ul>
+            {% for doc in documentaries %}
+            <li>{{doc.name}}
+            {% endfor %}
+        </ul>
+
+    <b>Lis of Movies:</b>
+        <ul>
+            {% for movie in movies %}
+            <li>{{movie.name}}: {{movie.year}}
+            {% endfor %}
+        </ul>
+</body>
+</html>
